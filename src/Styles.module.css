@@ -1,0 +1,131 @@
+:root {
+    --navBg : rgb(9, 7, 7);
+    --priColor: rgb(0,151,114);
+}
+
+body {
+    font-size: 30%;
+}
+
+.topNav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 12vh;
+    width: 100vw;
+    background: var(--navBg);
+    padding: 0px 20px;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topNav section.right {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+
+.topNav section > * {
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.topNav section.right button{
+   padding: 5px 8px;
+   border-radius: 8px;
+   border: 0.1px solid #333;
+   outline: none;
+   color: var(--priColor);
+   background: var(--navBg);
+   transition: all 0.3s linear;
+}
+
+.topNav section.right button:hover {
+  border: 1px solid var(--priColor);
+}
+
+.home {
+    padding: 0px 20px;
+    padding-top: 12vh;
+    padding-bottom: 20vh;
+
+}
+
+
+
+
+.notFound {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px 15px;
+    background: #eee;
+    color: rgb(2, 2, 63);
+    font-weight: 600;
+}
+
+.notFound button {
+    cursor: pointer;
+    padding: 5px 8px;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    color: #ccc;
+    background: var(--navBg);
+    transition: all 0.3s linear;
+}
+
+.notFound button:hover {
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px 3px #aaa;
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 20px;
+    height: 20vh;
+    width: 100vw;
+    background: var(--navBg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    }
+
+
+.footer a {
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+}
+
+.footer a:hover {
+    opacity: 0;
+}
+
+@media screen and (max-width: 790px){
+
+    .topNav section.right{
+        display: none;
+    }
+    .topNav section.left{
+        position: absolute;
+        right: 20px;
+    }
+    
+}

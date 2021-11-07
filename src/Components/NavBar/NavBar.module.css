@@ -1,0 +1,51 @@
+
+.navBar {
+    height: 6vh;
+    width: 100vw;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navBar ul {
+    list-style: none;
+}
+
+
+.leftArea ul, .rightArea ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #888;
+}
+
+
+
+.leftArea ul li {
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.leftArea ul li:hover {
+    border-bottom: 3px solid rgb(26, 26, 184);
+}
+.leftArea ul >*, .rightArea ul >* {
+    cursor: pointer;
+}
+
+.leftArea {
+    width: 30vw;
+}
+.rightArea {
+    width: 14vw;
+}
+
+.profilePic {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+  
+}
