@@ -83,3 +83,13 @@
 .info ul li {
     cursor: pointer;
 }
+
+@media screen and (min-width: 590px) {
+   .home  form{
+        width: 30rem;
+    }
+
+    .info ul {
+        width: 25rem;
+    }
+}

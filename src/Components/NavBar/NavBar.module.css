@@ -49,3 +49,13 @@
     border-radius: 50%;
   
 }
+
+@media screen and (min-width: 590px) {
+    .leftArea {
+        width: 11rem;
+    }
+
+    .rightArea {
+        width: 6rem;
+    }
+}
